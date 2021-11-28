@@ -21,9 +21,9 @@ prompt.get(
         console.log("Spawned Ffmpeg with command: " + commandLine);
       })
       .on("progress", function (progress) {
-        console.group("----------------------");
+        console.log("----------------------");
         console.log(JSON.stringify(progress));
-        console.groupEnd();
+        console.log("----------------------");
       })
       .on("end", function () {
         console.log("Transcoding succeeded !");
