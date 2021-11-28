@@ -2,8 +2,9 @@
 
 ### dependencies: ffmpeg should be installed on system
 
-Run:
-npm run start
+Install dependencies by running `npm install` command
+
+Run: `npm run start`
 - add input file path
 - add output file path
 - add format default mp4
