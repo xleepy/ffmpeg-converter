@@ -1,6 +1,7 @@
 const path = require("path");
 const ffmpeg = require("fluent-ffmpeg");
 
+// Regex from: https://stackoverflow.com/questions/1500260/detect-urls-in-text-with-javascript
 const isURL = (input) =>
   /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gi.test(
     input
