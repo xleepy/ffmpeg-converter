@@ -11,7 +11,7 @@ const convert = (input, output, format) => {
   ffmpeg(isURL(input) ? input : path.resolve(input))
     .inputOptions("-protocol_whitelist file,http,https,tcp,tls,crypto")
     .toFormat(format)
-    .save(path.resolve(output))
+    .save(path.resolve(`${output}.${format}`))
     .on("error", (err) => console.error(err))
     .on("start", function (commandLine) {
       console.log("Spawned Ffmpeg with command: " + commandLine);
