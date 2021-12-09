@@ -1,4 +1,4 @@
-## ffmpeg converter
+## Simple ffmpeg converter
 
 ### dependencies: ffmpeg should be installed on system
 
